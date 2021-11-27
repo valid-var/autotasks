@@ -6,23 +6,7 @@ def different_in_row(text: str) -> int:
     :param text: Анализируемый текст
     :return: Максимальное количество идущих подряд **различных** символов
     """
-    if len(text) == 0:
-        return 0
-    total_max = 1
-    local_max = 1
-    last_symbol = text[0]
-    for symbol in text[1:]:
-        if symbol != last_symbol:
-            local_max += 1
-            last_symbol = symbol
-        else:
-            if local_max > total_max:
-                total_max = local_max
-            local_max = 1
-    if local_max > total_max:
-        total_max = local_max
-    return total_max
-
+    pass
 
 class bcolors:
     OK = '\033[92m'
