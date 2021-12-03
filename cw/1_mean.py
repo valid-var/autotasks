@@ -1,3 +1,4 @@
+import math
 
 def mean(A: list) -> int:
     """
@@ -8,7 +9,14 @@ def mean(A: list) -> int:
     :param A: список чисел
     :return: результат среднего арифметического округленный в большую сторону
     """
-    pass
+    s = 0
+    for elem in A:
+        s += elem
+    return math.ceil(s / len(A))
+
+
+def mean_easy(A: list) -> int:
+    return math.ceil(sum(A) / len(A))
 
 
 class bcolors:

@@ -13,12 +13,15 @@ def format_request_headers(request: httpcore.Request, http2: bool = False) -> st
     ]
     return "\n".join(lines)
 
-
-a = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+     #0   #1   #2
+l = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
      'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-n = 923142
-s = ""
-while n > 0:
-    s = a[n % len(a)] + s
-    n //= len(a)
-print(s)
+num = 923142
+def translate(a: list, n: int) -> str:
+    s = ""
+    while n > 0:
+        s = a[n % len(a)] + s
+        n //= len(a)
+    return s
+
+print(translate(l, num))

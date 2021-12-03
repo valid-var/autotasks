@@ -7,8 +7,11 @@ def count_elements_mul(A: list, divider: int) -> int:
     :param divider: целое число, показатель кратности
     :return: количество элементов кратных divider
     """
-    pass
-
+    s = 0
+    for z in A:
+        if z % divider == 0:
+            s += 1
+    return s
 
 class bcolors:
     OK = '\033[92m'
