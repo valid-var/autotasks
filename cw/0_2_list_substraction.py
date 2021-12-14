@@ -8,10 +8,7 @@ def list_addition(A: list, B: list) -> list:
     :param B: список целых чисел
     :return: список целых чисел
     """
-    assert len(A) == len(B), "List A must be same length as list B"
-    for i in range(len(A)):
-        A[i] += B[i]
-    return A
+    pass
 
 def list_2d_addition_indexes(A: list, a: int, b: int) -> list:
     """
@@ -23,7 +20,7 @@ def list_2d_addition_indexes(A: list, a: int, b: int) -> list:
     :param b: индекс второй строки
     :return: список целых чисел
     """
-    return list_addition(A[a], A[b])
+    pass
 
 def list_2d_addition(A: list) -> list:
     """
@@ -33,10 +30,7 @@ def list_2d_addition(A: list) -> list:
     :param A: двумерный список
     :return: список целых чисел
     """
-    B = A[0]
-    for row in A[1:]:
-        B = list_addition(B, row)
-    return B
+    pass
 
 class bcolors:
     OK = '\033[92m'

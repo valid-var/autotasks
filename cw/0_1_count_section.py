@@ -9,11 +9,7 @@ def count_section(A: list, a: int, b: int) -> int:
     :param b: целое число, конец промежутка
     :return: количество элементов принадлежащих [a,b]
     """
-    k = 0
-    for elem in A:
-        if a <= elem <= b or a >= elem >= b:
-            k += 1
-    return k
+    pass
 
 def return_section(A: list, a: int, b: int) -> list:
     """
@@ -24,11 +20,7 @@ def return_section(A: list, a: int, b: int) -> list:
     :param b: целое число, конец промежутка
     :return: список элементов принадлежащих [a,b)
     """
-    B = []
-    for elem in A:
-        if a <= elem < b or a >= elem > b:
-            B.append(elem)
-    return B
+    pass
 
 
 class bcolors:

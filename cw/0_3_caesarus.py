@@ -14,16 +14,10 @@ def caesarus_encode(text: str, shift: int) -> str:
     :param text: исходный текс
     :return: преобразованный текст
     """
-    result = ""
-    for s in text:
-        result += chr(ord(s) + shift)
-    return result
+    pass
 
 def caesarus_decode(text: str, shift: int) -> str:
-    result = ""
-    for s in text:
-        result += chr(ord(s) - shift)
-    return result
+    pass
 
 
 class bcolors:
