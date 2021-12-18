@@ -1,9 +1,10 @@
 import time
 
 
-def min_product_div_3(pair_list):
+def min_product_div_3(pair_list: list) -> int:
     """
-    Нужно выбрать из каждой пары число для произведения так, чтобы итоговое произведение делилось на 3 и было наименьшим.
+    Нужно выбрать из каждой пары число для произведения так, чтобы
+    итоговое произведение делилось на 3 и было наименьшим.
     Числа не больше 25000
 
     :param pair_list: Список пар чисел
@@ -35,7 +36,7 @@ def test():
     test_function(min_product_div_3, result, input_value)
 
     input_value = [[9, 2], [100, 23], [20, 33]]
-    result = 4140
+    result = 1518
     test_function(min_product_div_3, result, input_value)
 
     input_value = [[1, 2], [100, 23], [20, 11]]
