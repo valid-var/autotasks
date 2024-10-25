@@ -61,6 +61,13 @@ def test():
 
     test_function(count_section, result, A, a, b)
 
+    A = [1, 2, 3, 4, 5]
+    a = 6
+    b = 4
+    result = 2
+
+    test_function(count_section, result, A, a, b)
+
     A = [-1, -2, 3, -4, -5]
     a = -3
     b = 0

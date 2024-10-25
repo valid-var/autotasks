@@ -20,7 +20,7 @@ def list_2d_addition_indexes(A: list, a: int, b: int) -> list:
     :param b: индекс второй строки
     :return: список целых чисел
     """
-    pass
+    return list_addition(A[a], A[b])
 
 def list_2d_addition(A: list) -> list:
     """
@@ -52,6 +52,12 @@ def test():
     A = [1, 2, 3, 4, 5]
     B = [0, 2, -3, -1, 3]
     result = [1, 4, 0, 3, 8]
+
+    test_function(list_addition, result, A, B)
+
+    A = [1, 2, 3, 4, 5, 6, 7]
+    B = [0, 2, -3, -1, 3]
+    result = [1, 4, 0, 3, 8, 6, 7]
 
     test_function(list_addition, result, A, B)
 
