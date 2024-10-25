@@ -12,8 +12,6 @@
 
     Пример данных:
 
-    python
-
 employees_data = [
     ["Alice", 30, 50000.0, "Engineering"],
     ["Bob", 24, 45000.0, "Sales"],
