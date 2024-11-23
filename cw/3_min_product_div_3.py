@@ -9,6 +9,18 @@ def min_product_div_3(pair_list: list) -> int:
 
     :param pair_list: Список пар чисел
     :return: Наименьшее произведение, делящееся на 3, или -1
+    x1 * x2 * x3 % 3 == 0
+
+    Найти pair такую, что pair_max/pair_min - минимальное, при этом pair_max % 3 = 0
+
+
+    (x1 + x2 + x3) % 3 == 0
+    (x1 + x2 + x3) % 3 == 1
+
+    (x1 + x2 + x3) % 3 == 2
+
+    xmax3 - xmin3 = diff3 % 3 == 2
+    ((x1 + x2 + x3) - diff3) % 3 == 0
     """
     product = 1
     return product
@@ -42,7 +54,6 @@ def test():
     input_value = [[1, 2], [100, 23], [20, 11]]
     result = -1
     test_function(min_product_div_3, result, input_value)
-
 
 
 if __name__ == "__main__":
