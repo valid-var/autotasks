@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/autotasks.iml" filepath="$PROJECT_DIR$/.idea/autotasks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EGE2025/.idea/ifoshool.iml" filepath="$PROJECT_DIR$/../EGE2025/.idea/ifoshool.iml" />
     </modules>
   </component>
 </project>
