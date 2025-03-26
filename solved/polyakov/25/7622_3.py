@@ -6,18 +6,6 @@ div = 1917
 
 upper_limit = 10**10
 
-# 1.
-
-result = fnmatch.fnmatch("3g123145", mask)
-print(result)
-
-# 2.
-import re
-
-re_mask = mask.replace("?", "\d").replace("*", "\d*") + "$"
-pattern = re.compile(re_mask)
-print(bool(pattern.match("31123145")))
-
 first_div = None
 for i in range(30120145, upper_limit):
     if i % div == 0:
@@ -25,5 +13,5 @@ for i in range(30120145, upper_limit):
         break
 
 for i in range(first_div, upper_limit, div):
-    if pattern.match(str(i)):
+    if fnmatch.fnmatch(str(i), mask):
         print(i, i // div)
